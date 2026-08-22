@@ -1,0 +1,49 @@
+{
+  "name": "soundpeats-c30",
+  "version": "1.0.0",
+  "description": "SOUNDPEATS C30 desktop app.",
+  "main": "main.js",
+  "author": "AhmedSahbaoui69 <ahmedsahbaoui561@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/AhmedSahbaoui69/soundpeats-c30",
+  "desktopName": "soundpeats-c30.desktop",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "dist:dir": "electron-builder --dir"
+  },
+  "dependencies": {
+    "koffi": "^3.1.6"
+  },
+  "devDependencies": {
+    "electron": "^43.4.1",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.soundpeats.c30",
+    "productName": "Soundpeats C30",
+    "icon": "build/icon.png",
+    "files": [
+      "main.js",
+      "src/**/*"
+    ],
+    "asarUnpack": [
+      "node_modules/koffi/**",
+      "node_modules/@koromix/**"
+    ],
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Utility",
+      "maintainer": "AhmedSahbaoui69 <ahmedsahbaoui561@gmail.com>",
+      "syncDesktopName": true
+    }
+  },
+  "allowScripts": {
+    "koffi@3.1.6": true,
+    "electron@43.4.1": true,
+    "electron-winstaller@5.4.0": true
+  }
+}

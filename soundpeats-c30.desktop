@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Soundpeats C30
+GenericName=Bluetooth headset controller
+Comment=Control ANC / transparency modes for the SOUNDPEATS C30 headset
+Exec="/home/hmed/Projects/Soundpeats C30 Driver/dist/linux-unpacked/soundpeats-c30"
+Terminal=false
+Categories=Utility;
+StartupNotify=true
+StartupWMClass=soundpeats-c30
