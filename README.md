@@ -25,8 +25,6 @@ each feature (mode switching, battery levels...) were identified.
 - Linux with **BlueZ** (`bluetoothctl`)
 - The C30 paired/trusted with the system once, the app detects it by name.
 
-> Bluetooth Classic control is Linux-only.
-
 ## Run
 
 ```bash
